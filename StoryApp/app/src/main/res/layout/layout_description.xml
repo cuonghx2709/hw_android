@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:layout_margin="20dp" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp">
+       <RelativeLayout
+           android:layout_gravity="center_horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="90dp">
+           <TextView
+               android:id="@+id/tv_title"
+               android:layout_centerHorizontal="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="ĐẠO MỘ BÚT KÝ"
+               android:textStyle="bold"
+               android:textSize="24dp" />
+           <TextView
+               android:id="@+id/tv_author"
+               android:layout_below="@+id/tv_title"
+               android:layout_centerHorizontal="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Nam Phái Tam Thúc"
+               android:textSize="@dimen/item_padding"
+               android:textStyle="italic" />
+           <TextView
+               android:id="@+id/tv_intro"
+               android:layout_below="@+id/tv_author"
+               android:layout_centerHorizontal="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Truyện Đạo Mộ Bút Ký của tác giả Nam Phái Tam Thúc đã thành công do sự pha trộn yếu tố phiêu lưu hành động và ma quá. Với kết cấu logic cùng nội dung gay cấn, bối cảnh trải rộng cả về thời gian lẫn không gian...\nTruyện biết cách tạo nên sức hút từ việc xây dựng cá tính và hoàn cảnh của từng nhân vật, các cuộc phiêu lưu đầy nguy hiểm, những tình thế hiểm nghèo và sức mạnh bí ẩn của những thế lực huyền bí.."
+               android:textSize="@dimen/item_padding"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginTop="20dp" />
+       </RelativeLayout>
+
+        <TextView
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/tv_intro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:text="START READING" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_image"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:src="@drawable/images"
+            android:id="@+id/iv_image"
+            android:background="#00ffffff"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"/>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>
